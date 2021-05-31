@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    min-height: 100vh;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(217, 19%, 35%);
+}
+
+.container {
+    max-width: 71.3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:    "horizontal horizontal small vertical"
+                            "small2 horizontal2 horizontal2 vertical";
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 2em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*CARDS*/
+.card {
+    position: relative;
+    border-radius: 10px;
+    padding: 2em 2.5em;
+    margin: 1em 1.15em;
+    box-shadow: 0px 24px 44px 0px rgba(0,0,0,0.15);
+    z-index: -10;
+}
+
+.horizontal {
+    grid-area: horizontal;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.horizontal2 {
+    grid-area: horizontal2;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+.small {
+    grid-area: small;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.small2 {
+    grid-area: small2;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.vertical {
+    grid-area: vertical;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.person {
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.quotation {
+    position: absolute;
+    top: 0;
+    right: 6em;
+    z-index: -1;
+}
+
+.person-image {
+    width: 32px;
+    margin-right: 1.1em;
+    border-radius: 50%;
+    border: 2px solid hsl(263, 80%, 80%);
+}
+
+.person-info {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 1em;
+    word-spacing: 0.005em;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+}
+
+.verified-graduate {
+    font-size: 0.8em;
+    font-weight: 500;
+    opacity: 0.5;
+    word-spacing: 0.005em;
+    letter-spacing: 0.04em;
+}
+
+.review-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.25em;
+    word-spacing: 0.01em;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.9em;
+}
+
+.review-paragraph {
+    opacity: 0.7;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.4em;
+    word-spacing: 0.045em;
+}
+
+.light .verified-graduate, .light .review-paragraph {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:    "horizontal horizontal small"
+                                "small2 horizontal2 horizontal2"
+                                "vertical vertical vertical";
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 40rem;
+    }
+}
