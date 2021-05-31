@@ -4,5 +4,5 @@
 
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [HERE](https://www.frontendmentor.io/solutions/testimonials-grid-section-YBUUkUKUu)
+- Live Site URL: [HERE](https://jmolinamelgarejo.github.io/Frontend-Mentor-Testimonials-Grid/)
